@@ -1,3 +1,4 @@
+# Materi 6: Deforestation Alerts and Driver Attribution with Satellite Imagery & AI (Dr. Bart Slachter)
 import torch
 import torch.nn as nn
 import torch.optim as optim

@@ -1,4 +1,6 @@
-// Contoh Controller Laravel untuk menyimpan data laporan beserta titik koordinat
+#Webinar 3: Career and Competition in Industrial Era with GIS
+
+# Contoh Controller Laravel untuk menyimpan data laporan beserta titik koordinat
 public function store(Request $request)
 {
     $validated = $request->validate([
@@ -10,7 +12,7 @@ public function store(Request $request)
 
     $report = Report::create([
         'description' => $validated['description'],
-        // Menyimpan koordinat spasial
+        #Menyimpan koordinat spasial
         'location' => DB::raw("ST_GeomFromText('POINT({$validated['longitude']} {$validated['latitude']})')"),
         'status' => 'pending'
     ]);

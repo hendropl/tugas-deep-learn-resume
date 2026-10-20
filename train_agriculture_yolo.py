@@ -1,3 +1,4 @@
+#Materi 2: Bridging Global Infrastructure to Address Local Challenge with HPC
 import torch
 from ultralytics import YOLO
 
